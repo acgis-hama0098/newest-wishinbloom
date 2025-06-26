@@ -24,12 +24,11 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="footer-section">
-            <h4>Popular Occasions</h4>
+            <h4>Policies</h4>
             <ul className="footer-links">
-              <li><a href="/occasion/wedding">Weddings</a></li>
-              <li><a href="/occasion/birthday">Birthdays</a></li>
-              <li><a href="/occasion/anniversary">Anniversaries</a></li>
-              <li><a href="/occasion/graduation">Graduations</a></li>
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/terms-of-service">Terms of Service</a></li>
+              <li><a href="/return-policy">Return Policy</a></li>
             </ul>
           </div>
           
