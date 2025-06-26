@@ -1,7 +1,5 @@
-
 import React, { useState } from 'react';
 import './Contact.css';
-
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -10,21 +8,22 @@ const Contact: React.FC = () => {
     occasion: '',
     message: ''
   });
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
+    const {
+      name,
+      value
+    } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     // Here you would typically send the data to your backend
     alert('Thank you for your message! We\'ll get back to you soon.');
-    
+
     // Reset form
     setFormData({
       name: '',
@@ -34,9 +33,7 @@ const Contact: React.FC = () => {
       message: ''
     });
   };
-
-  return (
-    <div className="contact">
+  return <div className="contact">
       <section className="section">
         <div className="container">
           <div className="contact-hero">
@@ -56,7 +53,7 @@ const Contact: React.FC = () => {
               <h2>Contact Information</h2>
               
               <div className="info-item">
-                <div className="info-icon">📍</div>
+                
                 <div>
                   <h4>Address</h4>
                   <p>123 Celebration Street<br />Event City, EC 12345</p>
@@ -64,7 +61,7 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="info-item">
-                <div className="info-icon">📞</div>
+                
                 <div>
                   <h4>Phone</h4>
                   <p>(555) 123-4567</p>
@@ -72,7 +69,7 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="info-item">
-                <div className="info-icon">✉️</div>
+                
                 <div>
                   <h4>Email</h4>
                   <p>hello@occasions.com</p>
@@ -80,7 +77,7 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="info-item">
-                <div className="info-icon">🕒</div>
+                
                 <div>
                   <h4>Business Hours</h4>
                   <p>
@@ -97,49 +94,24 @@ const Contact: React.FC = () => {
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="name">Full Name *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                  />
+                  <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} required />
                 </div>
 
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="email">Email *</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                    />
+                    <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} required />
                   </div>
 
                   <div className="form-group">
                     <label htmlFor="phone">Phone</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                    />
+                    <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange} />
                   </div>
                 </div>
 
                 <div className="form-group">
                   <label htmlFor="occasion">Occasion Type</label>
-                  <select
-                    id="occasion"
-                    name="occasion"
-                    value={formData.occasion}
-                    onChange={handleInputChange}
-                  >
+                  <select id="occasion" name="occasion" value={formData.occasion} onChange={handleInputChange}>
                     <option value="">Select an occasion</option>
                     <option value="wedding">Wedding</option>
                     <option value="birthday">Birthday</option>
@@ -152,15 +124,7 @@ const Contact: React.FC = () => {
 
                 <div className="form-group">
                   <label htmlFor="message">Message *</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Tell us about your vision, date, guest count, and any specific requirements..."
-                    required
-                  ></textarea>
+                  <textarea id="message" name="message" rows={5} value={formData.message} onChange={handleInputChange} placeholder="Tell us about your vision, date, guest count, and any specific requirements..." required></textarea>
                 </div>
 
                 <button type="submit" className="btn btn-primary">
@@ -171,8 +135,6 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
