@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from '@/components/ui/dialog';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -132,6 +132,9 @@ const Footer: React.FC = () => {
                   <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
                     <DialogHeader>
                       <DialogTitle>{PolicyContent.privacy.title}</DialogTitle>
+                      <DialogDescription>
+                        Our privacy policy explains how we collect, use, and protect your personal information.
+                      </DialogDescription>
                     </DialogHeader>
                     <div className="whitespace-pre-line text-sm leading-relaxed">
                       {PolicyContent.privacy.content}
@@ -147,6 +150,9 @@ const Footer: React.FC = () => {
                   <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
                     <DialogHeader>
                       <DialogTitle>{PolicyContent.terms.title}</DialogTitle>
+                      <DialogDescription>
+                        The terms and conditions for using our services and website.
+                      </DialogDescription>
                     </DialogHeader>
                     <div className="whitespace-pre-line text-sm leading-relaxed">
                       {PolicyContent.terms.content}
@@ -162,6 +168,9 @@ const Footer: React.FC = () => {
                   <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
                     <DialogHeader>
                       <DialogTitle>{PolicyContent.return.title}</DialogTitle>
+                      <DialogDescription>
+                        Information about returns, exchanges, and refunds for your purchases.
+                      </DialogDescription>
                     </DialogHeader>
                     <div className="whitespace-pre-line text-sm leading-relaxed">
                       {PolicyContent.return.content}
