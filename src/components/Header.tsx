@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   const isActiveLink = (path: string) => {
     return location.pathname === path;
   };
-  return <header className="bg-[#85abed] bg-[tra]">
+  return <header className="bg-[tra] bg-[#a7e3d8]/[0.59]">
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo" onClick={closeMenu}>
