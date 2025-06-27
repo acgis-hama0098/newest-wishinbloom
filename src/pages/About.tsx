@@ -2,11 +2,11 @@ import React from 'react';
 import './About.css';
 const About: React.FC = () => {
   return <div className="about">
-      <section className="section bg-[#a7e3d8]/[0.38]">
-        <div className="container">
+      <section className="section bg-[#a7e3d8]">
+        <div className="container bg-[#a7e3d8]/[0.84]">
           <div className="about-hero">
             <h1>About Occasions</h1>
-            <p className="lead">
+            <p className="lead font-bold">
               We believe every moment deserves to be celebrated with love, 
               care, and attention to detail.
             </p>
