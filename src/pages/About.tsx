@@ -19,17 +19,14 @@ const About: React.FC = () => {
           <div className="about-content">
             <div className="about-text">
               <h2>Our Story</h2>
-              <p>
-                Founded with a passion for creating memorable experiences, Occasions 
-                has been helping families and individuals celebrate life's most 
-                important moments for over a decade.
-              </p>
-              <p>
-                From intimate family gatherings to grand celebrations, we understand 
-                that each occasion is unique and deserves personalized attention. 
-                Our team of experienced planners and coordinators work tirelessly 
-                to bring your vision to life.
-              </p>
+              <p>Since as far back as I can remember, I’ve been creating handmade gifts, party favors, invitations, and decorations for life’s special moments. What began as a passion soon became something more—especially when my tiny helper, my daughter, joined me. With her innocent creativity and curious heart, she helped bring our shared vision to life. Together, we poured love into every piece, making each item not just beautiful, but meaningful.
+
+This work did more than fill our days—it strengthened the bond between us. Through the art of creation, we built not just a small business, but a life filled with joy, laughter, and connection. As a single mother, raising my only daughter came with challenges. But what kept us grounded and grateful was the happiness we were able to share with others. Our clients welcomed us into their most cherished moments—weddings, baptisms, birthdays, and more. Some even invited us to their celebrations, turning strangers into friends and work into lasting memories. These experiences carried us through the hardest of times and became the foundation of our story.</p>
+              <p>Nature has always been a gentle guide in our creative journey. The colors, textures, and harmony of the natural world inspire everything we make. We are friendly users of what nature offers always with respect, care, and a heart for sustainability.
+
+Beyond our love for design, we believe in giving back. Our small business proudly contributes to the community by supporting people with disabilities, offering them opportunities to work with us in ways that honor their abilities and dignity.
+
+Every item we make carries a story : ours, and now, yours. Thank you for letting us be a part of your beautiful moments.</p>
             </div>
             
             <div className="about-image">
