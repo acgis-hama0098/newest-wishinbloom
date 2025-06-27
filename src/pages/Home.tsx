@@ -1,21 +1,13 @@
-
 import React from 'react';
 import Hero from '../components/Hero';
 import Slideshow from '../components/Slideshow';
 import './Home.css';
-
 const Home: React.FC = () => {
-  const featuredImages = [
-    'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=600&fit=crop&auto=format',
-    'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop&auto=format',
-    'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&auto=format'
-  ];
-
-  return (
-    <div className="home">
+  const featuredImages = ['https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=600&fit=crop&auto=format', 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop&auto=format', 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&auto=format'];
+  return <div className="home">
       <Hero />
       
-      <section className="section">
+      <section className="section bg-[#a7e3d8]/[0.36]">
         <div className="container">
           <div className="home-content">
             <div className="content-text">
@@ -33,13 +25,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="content-slideshow">
-              <Slideshow 
-                images={featuredImages}
-                autoPlay={true}
-                autoPlayInterval={3000}
-                showControls={true}
-                showIndicators={true}
-              />
+              <Slideshow images={featuredImages} autoPlay={true} autoPlayInterval={3000} showControls={true} showIndicators={true} />
             </div>
           </div>
         </div>
@@ -69,8 +55,6 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
