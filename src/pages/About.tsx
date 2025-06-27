@@ -1,11 +1,8 @@
-
 import React from 'react';
 import './About.css';
-
 const About: React.FC = () => {
-  return (
-    <div className="about">
-      <section className="section">
+  return <div className="about">
+      <section className="section bg-[#a7e3d8]/[0.38]">
         <div className="container">
           <div className="about-hero">
             <h1>About Occasions</h1>
@@ -36,10 +33,7 @@ const About: React.FC = () => {
             </div>
             
             <div className="about-image">
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&auto=format" 
-                alt="Our team planning events"
-              />
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&auto=format" alt="Our team planning events" />
             </div>
           </div>
         </div>
@@ -116,8 +110,6 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
