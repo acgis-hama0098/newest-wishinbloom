@@ -13,8 +13,11 @@ import ReturnPolicy from './pages/ReturnPolicy';
 import './styles/globals.css';
 
 const App: React.FC = () => {
+  // Get the base path from vite config
+  const basename = import.meta.env.MODE === 'production' ? '/acgis-hama0098.github.io' : '';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <Header />
         <main>
