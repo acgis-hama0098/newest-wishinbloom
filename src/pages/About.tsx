@@ -1,59 +1,44 @@
-
 import React from 'react';
-
+import './About.css';
 const About: React.FC = () => {
-  return (
-    <div className="about">
-      <section className="section bg-gradient-to-r from-teal-400 to-blue-500 text-white">
-        <div className="container text-center">
-          <h1>About WishinBloom</h1>
-          <p className="lead font-bold">
-            We believe every moment deserves to be celebrated with love, 
-            care, and attention to detail.
-          </p>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2>Our Story</h2>
-              <p className="text-justify mb-4">
-                Since as far back as I can remember, I've been creating handmade gifts, party favors, 
-                invitations, and decorations for life's special moments. What began as a passion soon 
-                became something more especially when my tiny helper, my daughter, joined me. With her 
-                innocent creativity and curious heart, she helped bring our shared vision to life.
-              </p>
-              <p className="text-justify mb-4">
-                Together, we poured love into every piece, making each item not just beautiful, but 
-                meaningful. This work did more than fill our days, it strengthened the bond between us. 
-                Through the art of creation, we built not just a small business, but a life filled with 
-                joy, laughter, and connection.
-              </p>
-              <p className="text-justify">
-                Nature has always been a gentle guide in our creative journey. The colors, textures, 
-                and harmony of the natural world inspire everything we make. We are friendly users of 
-                what nature offers always with respect, care, and a heart for sustainability.
-              </p>
-            </div>
-            
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&auto=format" 
-                alt="Our team planning events" 
-                className="rounded-lg shadow-lg"
-              />
-            </div>
+  return <div className="about">
+      <section className="section bg-[#a7e3d8]">
+        <div className="container bg-[#a7e3d8]/[0.84]">
+          <div className="about-hero">
+            <h1>About Occasions</h1>
+            <p className="lead font-bold">
+              We believe every moment deserves to be celebrated with love, 
+              care, and attention to detail.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
-          <h2 className="text-center mb-12">What We Do</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="about-content">
+            <div className="about-text">
+              <h2>Our Story</h2>
+              <p className="text-justify">Since as far back as I can remember, I’ve been creating handmade gifts, party favors, invitations, and decorations for life’s special moments. What began as a passion soon became something more especially when my tiny helper, my daughter, joined me. With her innocent creativity and curious heart, she helped bring our shared vision to life. Together, we poured love into every piece, making each item not just beautiful, but meaningful. This work did more than fill our days, it strengthened the bond between us. Through the art of creation, we built not just a small business, but a life filled with joy, laughter, and connection. As a single mother, raising my only daughter came with challenges. But what kept us grounded and grateful was the happiness we were able to share with others. Our clients welcomed us into their most cherished moments; weddings, baptisms, birthdays, and more. Some even invited us to their celebrations, turning strangers into friends and work into lasting memories. These experiences carried us through the hardest of times and became the foundation of our story.</p>
+              <p className="text-justify">Nature has always been a gentle guide in our creative journey. The colors, textures, and harmony of the natural world inspire everything we make. We are friendly users of what nature offers always with respect, care, and a heart for sustainability.
+
+Beyond our love for design, we believe in giving back. Our small business proudly contributes to the community by supporting people with disabilities, offering them opportunities to work with us in ways that honor their abilities and dignity.
+
+Every item we make carries a story : ours, and now, yours. Thank you for letting us be a part of your beautiful moments.</p>
+            </div>
+            
+            <div className="about-image">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&auto=format" alt="Our team planning events" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <h2>What We Do</h2>
+          <div className="services-grid">
+            <div className="service-card">
               <h3>Event Planning</h3>
               <p>
                 Comprehensive planning services from concept to execution, 
@@ -61,7 +46,7 @@ const About: React.FC = () => {
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="service-card">
               <h3>Coordination</h3>
               <p>
                 Day-of coordination to ensure your event runs smoothly, 
@@ -69,7 +54,7 @@ const About: React.FC = () => {
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="service-card">
               <h3>Consulting</h3>
               <p>
                 Expert advice and guidance to help you make the best 
@@ -77,7 +62,7 @@ const About: React.FC = () => {
               </p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="service-card">
               <h3>Vendor Network</h3>
               <p>
                 Access to our trusted network of vendors and suppliers 
@@ -88,38 +73,38 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-alt">
         <div className="container">
-          <h2 className="text-center mb-12">Our Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-4xl mb-4">💎</div>
-              <h4>Excellence</h4>
-              <p>We strive for perfection in every detail</p>
-            </div>
-            
-            <div>
-              <div className="text-4xl mb-4">🤝</div>
-              <h4>Trust</h4>
-              <p>Building lasting relationships with our clients</p>
-            </div>
-            
-            <div>
-              <div className="text-4xl mb-4">🎨</div>
-              <h4>Creativity</h4>
-              <p>Bringing innovative ideas to every celebration</p>
-            </div>
-            
-            <div>
-              <div className="text-4xl mb-4">❤️</div>
-              <h4>Passion</h4>
-              <p>Love for what we do shows in every event</p>
+          <div className="values">
+            <h2>Our Values</h2>
+            <div className="values-grid">
+              <div className="value-item">
+                <div className="value-icon">💎</div>
+                <h4>Excellence</h4>
+                <p>We strive for perfection in every detail</p>
+              </div>
+              
+              <div className="value-item">
+                <div className="value-icon">🤝</div>
+                <h4>Trust</h4>
+                <p>Building lasting relationships with our clients</p>
+              </div>
+              
+              <div className="value-item">
+                <div className="value-icon">🎨</div>
+                <h4>Creativity</h4>
+                <p>Bringing innovative ideas to every celebration</p>
+              </div>
+              
+              <div className="value-item">
+                <div className="value-icon">❤️</div>
+                <h4>Passion</h4>
+                <p>Love for what we do shows in every event</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default About;

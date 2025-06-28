@@ -1,50 +1,50 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import './Footer.css';
 
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">WishinBloom</h3>
-            <p className="text-gray-400">
-              Creating unforgettable moments for life's special occasions.
-            </p>
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-content">
+          <div className="footer-section">
+            <h3>Occasions</h3>
+            <p>Celebrating life's special moments with you.</p>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2">
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Weddings</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Birthdays</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Anniversaries</Link></li>
-              <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Corporate Events</Link></li>
+          <div className="footer-section">
+            <h4>Quick Links</h4>
+            <ul className="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2">
-              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+          <div className="footer-section">
+            <h4>Policies</h4>
+            <ul className="footer-links">
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/terms-of-service">Terms of Service</a></li>
+              <li><a href="/return-policy">Return Policy</a></li>
             </ul>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-4">Contact Info</h4>
-            <div className="text-gray-400">
-              <p>123 Celebration Street</p>
-              <p>Event City, EC 12345</p>
-              <p>Phone: (555) 123-4567</p>
-              <p>Email: hello@wishinbloom.com</p>
+          <div className="footer-section">
+            <h4>Connect</h4>
+            <p>Follow us for inspiration and updates</p>
+            <div className="social-links">
+              <a href="#" aria-label="Facebook">📘</a>
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="Pinterest">📌</a>
             </div>
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 WishinBloom. All rights reserved.</p>
+        <div className="footer-bottom">
+          <p>&copy; {currentYear} Occasions. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import './Contact.css';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -21,8 +22,10 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    // Here you would typically send the data to your backend
     alert('Thank you for your message! We\'ll get back to you soon.');
 
+    // Reset form
     setFormData({
       name: '',
       email: '',
@@ -34,41 +37,49 @@ const Contact: React.FC = () => {
 
   return (
     <div className="contact">
-      <section className="section bg-gradient-to-r from-purple-600 to-pink-600 text-white">
-        <div className="container text-center">
-          <h1>Get In Touch</h1>
-          <p className="lead">
-            Ready to plan your special occasion? We'd love to hear from you 
-            and help make your vision come to life.
-          </p>
+      <section className="section">
+        <div className="container">
+          <div className="contact-hero">
+            <h1>Get In Touch</h1>
+            <p className="lead">
+              Ready to plan your special occasion? We'd love to hear from you 
+              and help make your vision come to life.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-alt">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
+          <div className="contact-content">
+            <div className="contact-info">
               <h2>Contact Information</h2>
               
-              <div className="space-y-6">
+              <div className="info-item">
                 <div>
-                  <h4 className="font-semibold mb-2">Address</h4>
-                  <p className="text-gray-600">123 Celebration Street<br />Event City, EC 12345</p>
+                  <h4>Address</h4>
+                  <p>123 Celebration Street<br />Event City, EC 12345</p>
                 </div>
-                
+              </div>
+              
+              <div className="info-item">
                 <div>
-                  <h4 className="font-semibold mb-2">Phone</h4>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <h4>Phone</h4>
+                  <p>(555) 123-4567</p>
                 </div>
-                
+              </div>
+              
+              <div className="info-item">
                 <div>
-                  <h4 className="font-semibold mb-2">Email</h4>
-                  <p className="text-gray-600">hello@wishinbloom.com</p>
+                  <h4>Email</h4>
+                  <p>hello@occasions.com</p>
                 </div>
-                
+              </div>
+              
+              <div className="info-item">
                 <div>
-                  <h4 className="font-semibold mb-2">Business Hours</h4>
-                  <p className="text-gray-600">
+                  <h4>Business Hours</h4>
+                  <p>
                     Monday - Friday: 9:00 AM - 6:00 PM<br />
                     Saturday: 10:00 AM - 4:00 PM<br />
                     Sunday: Closed
@@ -77,13 +88,11 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="contact-form">
               <h2>Send us a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Full Name *
-                  </label>
+              <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <label htmlFor="contact-name">Full Name *</label>
                   <input 
                     type="text" 
                     id="contact-name" 
@@ -91,15 +100,12 @@ const Contact: React.FC = () => {
                     value={formData.name} 
                     onChange={handleInputChange} 
                     required 
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="contact-email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email *
-                    </label>
+                <div className="form-row">
+                  <div className="form-group">
+                    <label htmlFor="contact-email">Email *</label>
                     <input 
                       type="email" 
                       id="contact-email" 
@@ -107,35 +113,28 @@ const Contact: React.FC = () => {
                       value={formData.email} 
                       onChange={handleInputChange} 
                       required 
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                   </div>
 
-                  <div>
-                    <label htmlFor="contact-phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone
-                    </label>
+                  <div className="form-group">
+                    <label htmlFor="contact-phone">Phone</label>
                     <input 
                       type="tel" 
                       id="contact-phone" 
                       name="phone" 
                       value={formData.phone} 
                       onChange={handleInputChange} 
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="contact-occasion" className="block text-sm font-medium text-gray-700 mb-1">
-                    Occasion Type
-                  </label>
+                <div className="form-group">
+                  <label htmlFor="contact-occasion">Occasion Type</label>
                   <select 
                     id="contact-occasion" 
                     name="occasion" 
                     value={formData.occasion} 
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     <option value="">Select an occasion</option>
                     <option value="wedding">Wedding</option>
@@ -147,10 +146,8 @@ const Contact: React.FC = () => {
                   </select>
                 </div>
 
-                <div>
-                  <label htmlFor="contact-message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message *
-                  </label>
+                <div className="form-group">
+                  <label htmlFor="contact-message">Message *</label>
                   <textarea 
                     id="contact-message" 
                     name="message" 
@@ -159,11 +156,10 @@ const Contact: React.FC = () => {
                     onChange={handleInputChange} 
                     placeholder="Tell us about your vision, date, guest count, and any specific requirements..." 
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
 
-                <button type="submit" className="btn btn-primary w-full">
+                <button type="submit" className="btn btn-primary">
                   Send Message
                 </button>
               </form>
