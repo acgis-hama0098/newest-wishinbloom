@@ -1,48 +1,31 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import OccasionDropdown from './OccasionDropdown';
-import './Header.css';
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-  const isActiveLink = (path: string) => {
-    return location.pathname === path;
-  };
-  return <header className="bg-[tra] bg-[#a7e3d8]/[0.59]">
+  return (
+    <header className="bg-white shadow-sm">
       <div className="container">
-        <div className="header-content">
-          <Link to="/" className="logo" onClick={closeMenu}>
-            <h2>Occasions</h2>
+        <nav className="flex items-center justify-between py-4">
+          <Link to="/" className="text-2xl font-bold text-blue-600">
+            WishinBloom
           </Link>
           
-          <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-            <div className="nav-links">
-              <Link to="/" className={`nav-link ${isActiveLink('/') ? 'active' : ''}`} onClick={closeMenu}>
-                Home
-              </Link>
-              <Link to="/about" className={`nav-link ${isActiveLink('/about') ? 'active' : ''}`} onClick={closeMenu}>
-                About
-              </Link>
-              <Link to="/contact" className={`nav-link ${isActiveLink('/contact') ? 'active' : ''}`} onClick={closeMenu}>
-                Contact
-              </Link>
-              <OccasionDropdown onSelect={closeMenu} />
-            </div>
-          </nav>
-
-          <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
-            <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-            <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-            <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
-          </button>
-        </div>
+          <div className="flex space-x-8">
+            <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors">
+              Home
+            </Link>
+            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
+              About
+            </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition-colors">
+              Contact
+            </Link>
+          </div>
+        </nav>
       </div>
-    </header>;
+    </header>
+  );
 };
+
 export default Header;
