@@ -13,8 +13,11 @@ import ReturnPolicy from './pages/ReturnPolicy';
 import './styles/globals.css';
 
 const App: React.FC = () => {
+  // Use basename only for production (GitHub Pages)
+  const basename = import.meta.env.PROD ? '/newest-wishinbloom' : '';
+
   return (
-    <Router basename="/newest-wishinbloom">
+    <Router basename={basename}>
       <div className="App">
         <Header />
         <main>
