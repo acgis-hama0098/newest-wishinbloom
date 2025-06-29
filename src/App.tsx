@@ -13,11 +13,8 @@ import ReturnPolicy from './pages/ReturnPolicy';
 import './styles/globals.css';
 
 const App: React.FC = () => {
-  // Get the base path from vite config
-  const basename = import.meta.env.MODE === 'production' ? '/newest-wishinbloom' : '';
-
   return (
-    <Router basename={basename}>
+    <Router basename="/newest-wishinbloom">
       <div className="App">
         <Header />
         <main>
