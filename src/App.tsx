@@ -14,7 +14,7 @@ import './styles/globals.css';
 
 const App: React.FC = () => {
   // Get the base path from vite config
-  const basename = import.meta.env.MODE === 'production' ? '/acgis-hama0098.github.io' : '';
+  const basename = import.meta.env.MODE === 'production' ? '/newest-wishinbloom' : '';
 
   return (
     <Router basename={basename}>
