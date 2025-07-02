@@ -1,7 +1,7 @@
 
 .footer {
-  background-color: var(--deep-taupe);
-  color: var(--charcoal-gray);
+  background-color: var(--charcoal-gray);
+  color: var(--text-light);
   padding: 3rem 0 1rem;
   margin-top: auto;
   width: 100%;
@@ -16,22 +16,19 @@
 
 .footer-section h3,
 .footer-section h4 {
-  color: var(--soft-black);
+  color: var(--dusty-rose-light);
   margin-bottom: 1rem;
   font-size: 1.2rem;
-  font-weight: 600;
 }
 
 .footer-section h3 {
   font-size: 1.5rem;
-  color: var(--soft-black);
-  font-weight: 700;
+  color: var(--soft-teal-light);
 }
 
 .footer-section p {
-  color: var(--charcoal-gray);
+  color: #cccccc;
   line-height: 1.6;
-  font-weight: 500;
 }
 
 .footer-links {
@@ -44,31 +41,29 @@
 }
 
 .footer-links a {
-  color: var(--charcoal-gray);
+  color: #cccccc;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-weight: 500;
 }
 
 .footer-links a:hover {
-  color: var(--soft-black);
+  color: var(--soft-teal-light);
 }
 
 .footer-link-button {
   background: none;
   border: none;
-  color: var(--charcoal-gray);
+  color: #cccccc;
   text-decoration: none;
   transition: color 0.3s ease;
   cursor: pointer;
   padding: 0;
   font-size: inherit;
   text-align: left;
-  font-weight: 500;
 }
 
 .footer-link-button:hover {
-  color: var(--soft-black);
+  color: var(--soft-teal-light);
 }
 
 .social-links {
@@ -94,9 +89,8 @@
 }
 
 .footer-bottom p {
-  color: var(--charcoal-gray);
+  color: #cccccc;
   margin: 0;
-  font-weight: 500;
 }
 
 @media (max-width: 768px) {
