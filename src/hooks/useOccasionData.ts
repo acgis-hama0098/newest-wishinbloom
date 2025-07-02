@@ -198,28 +198,7 @@ const occasionData: Record<string, OccasionData> = {
         description: 'Our team ensures your anniversary celebration is stress-free and memorable.'
       }
     ],
-    serviceItems: [
-      {
-        id: 'design',
-        title: 'Event Design',
-        description: 'Custom themes reflecting your years together and shared memories'
-      },
-      {
-        id: 'venue',
-        title: 'Venue Selection',
-        description: 'Finding the perfect location to celebrate your milestone'
-      },
-      {
-        id: 'vendor',
-        title: 'Vendor Coordination',
-        description: 'Managing all suppliers and service providers for your celebration'
-      },
-      {
-        id: 'coordination',
-        title: 'Day-of Coordination',
-        description: 'Ensuring everything runs smoothly on your special anniversary'
-      }
-    ],
+    serviceItems: [],
     whyChooseTitle: 'Why Choose Us for Anniversaries?',
     servicesTitle: 'Anniversary Services'
   },
