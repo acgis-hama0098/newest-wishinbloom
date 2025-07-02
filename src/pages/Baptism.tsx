@@ -20,7 +20,7 @@ const Baptism: React.FC = () => {
             <div className="occasion-gallery">
               <div className="gallery-grid">
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop&auto=format" alt="Baptism Theme 1" />
+                  <img src="/placeholder.svg" alt="Traditional Baptism" />
                   <div className="gallery-item-content">
                     <h4>Traditional Baptism</h4>
                     <p>Classic baptism celebrations with elegant decorations and meaningful touches</p>
@@ -29,7 +29,7 @@ const Baptism: React.FC = () => {
                 </div>
                 
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&auto=format" alt="Baptism Theme 2" />
+                  <img src="/placeholder.svg" alt="Family Baptism Gathering" />
                   <div className="gallery-item-content">
                     <h4>Family Baptism Gathering</h4>
                     <p>Intimate family celebrations following the baptism ceremony</p>
@@ -38,7 +38,7 @@ const Baptism: React.FC = () => {
                 </div>
                 
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=600&fit=crop&auto=format" alt="Baptism Theme 3" />
+                  <img src="/placeholder.svg" alt="Modern Baptism Reception" />
                   <div className="gallery-item-content">
                     <h4>Modern Baptism Reception</h4>
                     <p>Contemporary baptism receptions with stylish decorations and catering</p>
