@@ -19,7 +19,11 @@ const occasions = [
   { name: 'Anniversary', route: '/occasion/anniversary' },
   { name: 'Graduation', route: '/occasion/graduation' },
   { name: 'New Year', route: '/occasion/new-year' },
-  { name: 'Baby Shower', route: '/occasion/baby-shower' }
+  { name: 'Baby Shower', route: '/occasion/baby-shower' },
+  { name: 'Casual Gift', route: '/occasion/casual-gift' },
+  { name: 'Canada Day', route: '/occasion/canada-day' },
+  { name: 'Thanksgiving', route: '/occasion/thanksgiving' },
+  { name: 'Special Occasions', route: '/occasion/special-occasions' }
 ];
 
 const OccasionDropdown: React.FC<OccasionDropdownProps> = ({ onSelect }) => {

@@ -13,6 +13,15 @@ import MothersDay from './pages/MothersDay';
 import Christmas from './pages/Christmas';
 import Easter from './pages/Easter';
 import Halloween from './pages/Halloween';
+import ValentinesDay from './pages/ValentinesDay';
+import Anniversary from './pages/Anniversary';
+import Graduation from './pages/Graduation';
+import NewYear from './pages/NewYear';
+import BabyShower from './pages/BabyShower';
+import CasualGift from './pages/CasualGift';
+import CanadaDay from './pages/CanadaDay';
+import Thanksgiving from './pages/Thanksgiving';
+import SpecialOccasions from './pages/SpecialOccasions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ReturnPolicy from './pages/ReturnPolicy';
@@ -35,6 +44,15 @@ const App: React.FC = () => {
             <Route path="/occasion/christmas" element={<Christmas />} />
             <Route path="/occasion/easter" element={<Easter />} />
             <Route path="/occasion/halloween" element={<Halloween />} />
+            <Route path="/occasion/valentines-day" element={<ValentinesDay />} />
+            <Route path="/occasion/anniversary" element={<Anniversary />} />
+            <Route path="/occasion/graduation" element={<Graduation />} />
+            <Route path="/occasion/new-year" element={<NewYear />} />
+            <Route path="/occasion/baby-shower" element={<BabyShower />} />
+            <Route path="/occasion/casual-gift" element={<CasualGift />} />
+            <Route path="/occasion/canada-day" element={<CanadaDay />} />
+            <Route path="/occasion/thanksgiving" element={<Thanksgiving />} />
+            <Route path="/occasion/special-occasions" element={<SpecialOccasions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/return-policy" element={<ReturnPolicy />} />
