@@ -15,30 +15,6 @@ const Home: React.FC = () => {
       <div className="home">
       <Hero />
       
-      <section className="section bg-[#a7e3d8]/[0.36]">
-        <div className="container">
-          <div className="home-content">
-            <div className="content-text">
-              <h2>Making Every Occasion Special</h2>
-              <p>
-                Whether you're planning a wedding, celebrating a birthday, or marking 
-                any special milestone, we provide inspiration and resources to make your 
-                occasion truly memorable.
-              </p>
-              <p>
-                Our curated collection of ideas, tips, and resources helps you create 
-                beautiful moments that will be cherished forever.
-              </p>
-              <button className="btn btn-primary">View All Occasions</button>
-            </div>
-            
-            <div className="content-slideshow">
-              <Slideshow images={featuredImages} autoPlay={true} autoPlayInterval={3000} showControls={true} showIndicators={true} />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="section section-alt">
         <div className="container">
           <div className="features">

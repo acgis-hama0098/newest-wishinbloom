@@ -29,15 +29,30 @@ const ScrollToTop: React.FC = () => {
       onClick={scrollToTop}
       className={`
         fixed bottom-6 right-6 z-50
-        bg-primary text-primary-foreground
         w-12 h-12 rounded-full
         shadow-lg hover:shadow-xl
         flex items-center justify-center
         transition-all duration-300 ease-out
-        hover:scale-110 hover:bg-primary/90
-        focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2
+        hover:scale-110
+        focus:outline-none focus:ring-2 focus:ring-offset-2
+        bg-white border-2 border-opacity-20
+        text-opacity-80 hover:text-opacity-100
         ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}
       `}
+      style={{
+        backgroundColor: 'var(--soft-teal)',
+        color: 'white',
+        borderColor: 'var(--soft-teal-light)',
+        boxShadow: '0 4px 20px rgba(112, 169, 161, 0.3)'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = 'var(--soft-teal-dark)';
+        e.currentTarget.style.boxShadow = '0 8px 30px rgba(112, 169, 161, 0.4)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = 'var(--soft-teal)';
+        e.currentTarget.style.boxShadow = '0 4px 20px rgba(112, 169, 161, 0.3)';
+      }}
       aria-label="Scroll to top"
     >
       <ChevronUp size={20} />
