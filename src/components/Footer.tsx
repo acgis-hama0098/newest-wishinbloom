@@ -1,13 +1,11 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import { Facebook, Instagram } from 'lucide-react';
 import './Footer.css';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  const { t } = useTranslation();
 
   return (
     <footer className="footer">
@@ -15,30 +13,30 @@ const Footer: React.FC = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Occasions</h3>
-            <p>{t('footer.tagline')}</p>
+            <p>Celebrating life's special moments with you.</p>
           </div>
           
           <div className="footer-section">
-            <h4>{t('footer.quickLinks')}</h4>
+            <h4>Quick Links</h4>
             <ul className="footer-links">
-              <li><Link to="/">{t('nav.home')}</Link></li>
-              <li><Link to="/about">{t('nav.about')}</Link></li>
-              <li><Link to="/contact">{t('nav.contact')}</Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
           
           <div className="footer-section">
-            <h4>{t('footer.policies')}</h4>
+            <h4>Policies</h4>
             <ul className="footer-links">
-              <li><Link to="/privacy-policy">{t('footer.privacyPolicy')}</Link></li>
-              <li><Link to="/terms-of-service">{t('footer.termsOfService')}</Link></li>
-              <li><Link to="/return-policy">{t('footer.returnPolicy')}</Link></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service">Terms of Service</Link></li>
+              <li><Link to="/return-policy">Return Policy</Link></li>
             </ul>
           </div>
           
           <div className="footer-section">
-            <h4>{t('footer.connect')}</h4>
-            <p>{t('footer.followUs')}</p>
+            <h4>Connect</h4>
+            <p>Follow us for inspiration and updates</p>
             <div className="social-links">
               <a 
                 href="https://www.instagram.com/wishin_bloom" 
@@ -61,7 +59,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Occasions. {t('footer.copyright')}</p>
+          <p>&copy; {currentYear} Occasions. All rights reserved.</p>
         </div>
       </div>
     </footer>
