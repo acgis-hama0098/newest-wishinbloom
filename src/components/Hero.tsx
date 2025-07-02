@@ -16,14 +16,16 @@ const Hero: React.FC = () => {
     <section className="hero">
       <div className="hero-content">
         <div className="hero-text">
-          <h1>Celebrate Every Special Moment</h1>
-          <p>
+          <div className="hero-branding">
+            <h1 className="brand-name">Wish in Bloom</h1>
+            <p className="brand-slogan">Where Every Gift Blooms with Meaning.</p>
+          </div>
+          <p className="hero-description">
             From intimate gatherings to grand celebrations, we help you create 
             unforgettable memories for life's most precious occasions.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary">Explore Occasions</button>
-            <button className="btn btn-secondary">Learn More</button>
+            <a href="/learn-more" className="btn btn-secondary">Learn More</a>
           </div>
         </div>
         
