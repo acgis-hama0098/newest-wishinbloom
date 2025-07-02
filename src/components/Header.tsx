@@ -1,27 +1,20 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import OccasionDropdown from './OccasionDropdown';
 import './Header.css';
-
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-
   const isActiveLink = (path: string) => {
     return location.pathname === path;
   };
-
-  return (
-    <header className="bg-[#a7e3d8]/[0.59]">
+  return <header className="bg-[#90afa8]">
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo" onClick={closeMenu}>
@@ -50,8 +43,6 @@ const Header: React.FC = () => {
           </button>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
