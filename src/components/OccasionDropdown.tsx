@@ -8,18 +8,18 @@ interface OccasionDropdownProps {
 }
 
 const occasions = [
-  'Baptism',
-  'Wedding', 
-  'Birthday',
-  'Mother\'s Day',
-  'Christmas',
-  'Easter',
-  'Halloween',
-  'Valentine\'s Day',
-  'Anniversary',
-  'Graduation',
-  'New Year',
-  'Baby Shower'
+  { name: 'Baptism', route: '/occasion/baptism' },
+  { name: 'Wedding', route: '/occasion/wedding' }, 
+  { name: 'Birthday', route: '/occasion/birthday' },
+  { name: 'Mother\'s Day', route: '/occasion/mothers-day' },
+  { name: 'Christmas', route: '/occasion/christmas' },
+  { name: 'Easter', route: '/occasion/easter' },
+  { name: 'Halloween', route: '/occasion/halloween' },
+  { name: 'Valentine\'s Day', route: '/occasion/valentines-day' },
+  { name: 'Anniversary', route: '/occasion/anniversary' },
+  { name: 'Graduation', route: '/occasion/graduation' },
+  { name: 'New Year', route: '/occasion/new-year' },
+  { name: 'Baby Shower', route: '/occasion/baby-shower' }
 ];
 
 const OccasionDropdown: React.FC<OccasionDropdownProps> = ({ onSelect }) => {
@@ -31,9 +31,8 @@ const OccasionDropdown: React.FC<OccasionDropdownProps> = ({ onSelect }) => {
     setIsOpen(!isOpen);
   };
 
-  const handleOccasionSelect = (occasion: string) => {
-    const formattedOccasion = occasion.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '');
-    navigate(`/occasion/${formattedOccasion}`);
+  const handleOccasionSelect = (route: string) => {
+    navigate(route);
     setIsOpen(false);
     if (onSelect) {
       onSelect();
@@ -70,11 +69,11 @@ const OccasionDropdown: React.FC<OccasionDropdownProps> = ({ onSelect }) => {
         <div className="dropdown-content">
           {occasions.map((occasion) => (
             <button
-              key={occasion}
+              key={occasion.name}
               className="dropdown-item"
-              onClick={() => handleOccasionSelect(occasion)}
+              onClick={() => handleOccasionSelect(occasion.route)}
             >
-              {occasion}
+              {occasion.name}
             </button>
           ))}
         </div>
