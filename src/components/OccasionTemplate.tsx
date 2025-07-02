@@ -36,11 +36,13 @@ const OccasionTemplate: React.FC<OccasionTemplateProps> = ({ data }) => {
           </div>
         </section>
 
-        <section className="section">
-          <div className="container">
-            <ServicesSection title={data.servicesTitle} items={data.serviceItems} />
-          </div>
-        </section>
+        {data.serviceItems && data.serviceItems.length > 0 && (
+          <section className="section">
+            <div className="container">
+              <ServicesSection title={data.servicesTitle} items={data.serviceItems} />
+            </div>
+          </section>
+        )}
       </div>
     </>
   );

@@ -272,28 +272,7 @@ const occasionData: Record<string, OccasionData> = {
         description: 'Our team brings your most ambitious celebration ideas to life perfectly.'
       }
     ],
-    serviceItems: [
-      {
-        id: 'design',
-        title: 'Event Design',
-        description: 'Custom creative themes designed specifically for your unique celebration'
-      },
-      {
-        id: 'venue',
-        title: 'Venue Selection',
-        description: 'Finding distinctive locations that match your special occasion vision'
-      },
-      {
-        id: 'vendor',
-        title: 'Vendor Coordination',
-        description: 'Managing specialized suppliers and service providers for unique events'
-      },
-      {
-        id: 'coordination',
-        title: 'Day-of Coordination',
-        description: 'Ensuring every detail of your special occasion unfolds flawlessly'
-      }
-    ],
+    serviceItems: [],
     whyChooseTitle: 'Why Choose Us for Special Occasions?',
     servicesTitle: 'Special Occasion Services'
   }
