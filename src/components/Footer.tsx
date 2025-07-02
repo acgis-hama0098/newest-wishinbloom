@@ -37,9 +37,22 @@ const Footer: React.FC = () => {
             <h4>Connect</h4>
             <p>Follow us for inspiration and updates</p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook">📘</a>
-              <a href="#" aria-label="Instagram">📷</a>
-              <a href="#" aria-label="Pinterest">📌</a>
+              <a 
+                href="https://www.facebook.com/wishinbloom" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Facebook - Wishin Bloom"
+              >
+                📘
+              </a>
+              <a 
+                href="https://www.facebook.com/wishin_bloom" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Facebook - Wishin Bloom Alternative"
+              >
+                📘
+              </a>
             </div>
           </div>
         </div>
