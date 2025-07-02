@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -39,18 +39,18 @@ const Footer: React.FC = () => {
             <p>Follow us for inspiration and updates</p>
             <div className="social-links">
               <a 
+                href="https://www.instagram.com/wishin_bloom" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Instagram size={24} />
+              </a>
+              <a 
                 href="https://www.facebook.com/wishinbloom" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                aria-label="Facebook - Wishin Bloom"
-              >
-                <Facebook size={24} />
-              </a>
-              <a 
-                href="https://www.facebook.com/wishin_bloom" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="Facebook - Wishin Bloom Alternative"
+                aria-label="Facebook"
               >
                 <Facebook size={24} />
               </a>
