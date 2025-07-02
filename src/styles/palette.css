@@ -1,30 +1,31 @@
 
 :root {
-  --dusty-rose: #D4A5A5;
-  --soft-teal: #70A9A1;
-  --warm-taupe: #BFA6A0;
-  --blush-beige: #F2D8C2;
-  --charcoal-gray: #4B4B4B;
+  --blush-pink: #FADADD;
+  --cream-white: #FFF8F0;
+  --pastel-sage: #D8E2DC;
+  --dusty-rose: #E8AEB7;
+  --soft-lavender: #E6E6FA;
+  --warm-taupe: #A89F91;
   
   /* Additional shades for better design flexibility */
-  --dusty-rose-light: #E2C2C2;
-  --dusty-rose-dark: #C68E8E;
-  --soft-teal-light: #8BB7B0;
-  --soft-teal-dark: #5A8B84;
-  --warm-taupe-light: #CDB8B2;
-  --warm-taupe-dark: #A8918B;
-  --blush-beige-light: #F7E5D4;
-  --blush-beige-dark: #EDCBB0;
-  --charcoal-gray-light: #6B6B6B;
-  --charcoal-gray-dark: #2B2B2B;
+  --blush-pink-light: #FCDEDF;
+  --blush-pink-dark: #F7B6BB;
+  --pastel-sage-light: #E4EBE7;
+  --pastel-sage-dark: #CCD9D1;
+  --dusty-rose-light: #EEC0C7;
+  --dusty-rose-dark: #E29CA7;
+  --soft-lavender-light: #EDEDFC;
+  --soft-lavender-dark: #DFDFF8;
+  --warm-taupe-light: #B8B0A4;
+  --warm-taupe-dark: #988E7E;
   
   /* Text colors */
-  --text-primary: var(--charcoal-gray);
-  --text-secondary: var(--warm-taupe-dark);
-  --text-light: #FFFFFF;
+  --text-primary: var(--warm-taupe-dark);
+  --text-secondary: var(--warm-taupe);
+  --text-light: var(--cream-white);
   
   /* Background colors */
-  --bg-primary: #FFFFFF;
-  --bg-secondary: var(--blush-beige);
-  --bg-accent: var(--dusty-rose-light);
+  --bg-primary: var(--cream-white);
+  --bg-secondary: var(--soft-lavender-light);
+  --bg-accent: var(--blush-pink-light);
 }
