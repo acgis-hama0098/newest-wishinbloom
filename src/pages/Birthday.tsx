@@ -9,7 +9,7 @@ const Birthday: React.FC = () => {
         <div className="container">
           <div className="occasion-hero">
             <h1>Birthday Celebrations</h1>
-            <p className="lead">Make birthdays unforgettable with personalized celebrations that reflect the unique personality of the birthday star.</p>
+            <p className="lead">Make every birthday unforgettable with our personalized celebration planning services.</p>
           </div>
         </div>
       </section>
@@ -20,28 +20,28 @@ const Birthday: React.FC = () => {
             <div className="occasion-gallery">
               <div className="gallery-grid">
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&auto=format" alt="Birthday Theme 1" />
+                  <img src="/placeholder.svg" alt="Kids Birthday Party" />
                   <div className="gallery-item-content">
-                    <h4>Classic Birthday Party</h4>
-                    <p>Traditional birthday celebration with cake, balloons, and decorations</p>
+                    <h4>Kids Birthday Party</h4>
+                    <p>Fun-filled birthday celebrations with games, decorations, and memorable moments</p>
                     <button className="btn btn-primary">Inquire</button>
                   </div>
                 </div>
                 
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=800&h=600&fit=crop&auto=format" alt="Birthday Theme 2" />
-                  <div className="gallery-item-content">
-                    <h4>Themed Birthday Party</h4>
-                    <p>Customized birthday party with specific themes and personalized touches</p>
-                    <button className="btn btn-primary">Inquire</button>
-                  </div>
-                </div>
-                
-                <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=600&fit=crop&auto=format" alt="Birthday Theme 3" />
+                  <img src="/placeholder.svg" alt="Adult Birthday Celebration" />
                   <div className="gallery-item-content">
                     <h4>Adult Birthday Celebration</h4>
-                    <p>Elegant birthday celebrations for milestone birthdays and adult parties</p>
+                    <p>Sophisticated birthday parties tailored for adults with elegant themes</p>
+                    <button className="btn btn-primary">Inquire</button>
+                  </div>
+                </div>
+                
+                <div className="gallery-item">
+                  <img src="/placeholder.svg" alt="Milestone Birthday" />
+                  <div className="gallery-item-content">
+                    <h4>Milestone Birthday</h4>
+                    <p>Special celebrations for milestone birthdays with personalized touches</p>
                     <button className="btn btn-primary">Inquire</button>
                   </div>
                 </div>

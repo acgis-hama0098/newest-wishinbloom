@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './OccasionPage.css';
 
@@ -8,7 +9,7 @@ const Christmas: React.FC = () => {
         <div className="container">
           <div className="occasion-hero">
             <h1>Christmas Celebrations</h1>
-            <p className="lead">Create magical Christmas celebrations filled with warmth, joy, and unforgettable family moments.</p>
+            <p className="lead">Create magical Christmas memories with our festive celebration planning services.</p>
           </div>
         </div>
       </section>
@@ -19,28 +20,28 @@ const Christmas: React.FC = () => {
             <div className="occasion-gallery">
               <div className="gallery-grid">
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop&auto=format" alt="Christmas Theme 1" />
+                  <img src="/placeholder.svg" alt="Traditional Christmas Dinner" />
                   <div className="gallery-item-content">
-                    <h4>Traditional Christmas</h4>
-                    <p>Classic Christmas celebrations with traditional decorations and festivities</p>
+                    <h4>Traditional Christmas Dinner</h4>
+                    <p>Classic Christmas celebrations with traditional decorations and festive dining</p>
                     <button className="btn btn-primary">Inquire</button>
                   </div>
                 </div>
                 
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&auto=format" alt="Christmas Theme 2" />
+                  <img src="/placeholder.svg" alt="Winter Wonderland Party" />
                   <div className="gallery-item-content">
-                    <h4>Modern Christmas Party</h4>
-                    <p>Contemporary Christmas celebrations with stylish decorations</p>
+                    <h4>Winter Wonderland Party</h4>
+                    <p>Magical winter-themed celebrations with snow-inspired decorations</p>
                     <button className="btn btn-primary">Inquire</button>
                   </div>
                 </div>
                 
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=600&fit=crop&auto=format" alt="Christmas Theme 3" />
+                  <img src="/placeholder.svg" alt="Corporate Christmas Event" />
                   <div className="gallery-item-content">
                     <h4>Corporate Christmas Event</h4>
-                    <p>Professional Christmas events for businesses and organizations</p>
+                    <p>Professional Christmas celebrations for businesses and organizations</p>
                     <button className="btn btn-primary">Inquire</button>
                   </div>
                 </div>
@@ -54,7 +55,7 @@ const Christmas: React.FC = () => {
                   <div className="detail-icon">✨</div>
                   <div>
                     <h4>Personalized Planning</h4>
-                    <p>Every Christmas is unique, and we tailor our services to your specific vision and needs.</p>
+                    <p>Every Christmas celebration is unique, and we tailor our services to your specific vision and needs.</p>
                   </div>
                 </div>
                 

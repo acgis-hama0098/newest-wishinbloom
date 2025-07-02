@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './OccasionPage.css';
 
@@ -8,7 +9,7 @@ const MothersDay: React.FC = () => {
         <div className="container">
           <div className="occasion-hero">
             <h1>Mother's Day Celebrations</h1>
-            <p className="lead">Honor the special women in your life with thoughtful celebrations that show your appreciation.</p>
+            <p className="lead">Honor the special mothers in your life with thoughtful and heartwarming celebrations.</p>
           </div>
         </div>
       </section>
@@ -19,28 +20,28 @@ const MothersDay: React.FC = () => {
             <div className="occasion-gallery">
               <div className="gallery-grid">
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=600&fit=crop&auto=format" alt="Mothers Day Theme 1" />
+                  <img src="/placeholder.svg" alt="Elegant Mother's Day Brunch" />
                   <div className="gallery-item-content">
-                    <h4>Elegant Brunch</h4>
-                    <p>Beautiful Mother's Day brunch celebrations with floral arrangements</p>
+                    <h4>Elegant Mother's Day Brunch</h4>
+                    <p>Beautiful brunch celebrations with elegant table settings and delicious food</p>
                     <button className="btn btn-primary">Inquire</button>
                   </div>
                 </div>
                 
                 <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&auto=format" alt="Mothers Day Theme 2" />
+                  <img src="/placeholder.svg" alt="Garden Tea Party" />
+                  <div className="gallery-item-content">
+                    <h4>Garden Tea Party</h4>
+                    <p>Charming outdoor tea parties surrounded by beautiful flowers and nature</p>
+                    <button className="btn btn-primary">Inquire</button>
+                  </div>
+                </div>
+                
+                <div className="gallery-item">
+                  <img src="/placeholder.svg" alt="Family Gathering" />
                   <div className="gallery-item-content">
                     <h4>Family Gathering</h4>
-                    <p>Intimate family celebrations to honor mothers and grandmothers</p>
-                    <button className="btn btn-primary">Inquire</button>
-                  </div>
-                </div>
-                
-                <div className="gallery-item">
-                  <img src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=600&fit=crop&auto=format" alt="Mothers Day Theme 3" />
-                  <div className="gallery-item-content">
-                    <h4>Garden Party</h4>
-                    <p>Outdoor Mother's Day celebrations in beautiful garden settings</p>
+                    <p>Intimate family celebrations that bring everyone together to honor mom</p>
                     <button className="btn btn-primary">Inquire</button>
                   </div>
                 </div>
@@ -54,7 +55,7 @@ const MothersDay: React.FC = () => {
                   <div className="detail-icon">✨</div>
                   <div>
                     <h4>Personalized Planning</h4>
-                    <p>Every Mother's Day is unique, and we tailor our services to your specific vision and needs.</p>
+                    <p>Every mother is unique, and we tailor our services to create the perfect celebration for her.</p>
                   </div>
                 </div>
                 
