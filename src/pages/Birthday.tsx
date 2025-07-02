@@ -1,11 +1,18 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import './OccasionPage.css';
 
 const Birthday: React.FC = () => {
   return (
-    <div className="occasion-page">
+    <>
+      <SEO 
+        title="Birthday Party Planning"
+        description="Create unforgettable birthday celebrations for all ages. From kids' themed parties to milestone birthday celebrations, we make every birthday special."
+        keywords="birthday party planner, kids birthday parties, adult birthday celebrations, milestone birthdays, birthday party ideas"
+      />
+      <div className="occasion-page">
       <section className="section">
         <div className="container">
           <div className="occasion-hero">
@@ -21,7 +28,7 @@ const Birthday: React.FC = () => {
             <div className="occasion-gallery">
               <div className="gallery-grid">
                 <div className="gallery-item">
-                  <img src="/placeholder.svg" alt="Kids Birthday Party" />
+                  <img src="/placeholder.svg" alt="Colorful kids birthday party with balloons, cake, and fun decorations in a festive setting" />
                   <div className="gallery-item-content">
                     <h4>Kids Birthday Party</h4>
                     <p>Fun-filled birthday celebrations with games, decorations, and memorable moments</p>
@@ -30,7 +37,7 @@ const Birthday: React.FC = () => {
                 </div>
                 
                 <div className="gallery-item">
-                  <img src="/placeholder.svg" alt="Adult Birthday Celebration" />
+                  <img src="/placeholder.svg" alt="Sophisticated adult birthday party with elegant decorations and stylish table settings" />
                   <div className="gallery-item-content">
                     <h4>Adult Birthday Celebration</h4>
                     <p>Sophisticated birthday parties tailored for adults with elegant themes</p>
@@ -39,7 +46,7 @@ const Birthday: React.FC = () => {
                 </div>
                 
                 <div className="gallery-item">
-                  <img src="/placeholder.svg" alt="Milestone Birthday" />
+                  <img src="/placeholder.svg" alt="Special milestone birthday celebration with personalized decorations and memory displays" />
                   <div className="gallery-item-content">
                     <h4>Milestone Birthday</h4>
                     <p>Special celebrations for milestone birthdays with personalized touches</p>
@@ -107,6 +114,7 @@ const Birthday: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

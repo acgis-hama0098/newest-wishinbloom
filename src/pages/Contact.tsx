@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 import './Contact.css';
 
 const Contact: React.FC = () => {
@@ -36,7 +37,13 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="contact">
+    <>
+      <SEO 
+        title="Contact Us"
+        description="Get in touch with our event planning team. Contact us for weddings, birthdays, anniversaries, and special occasions. Free consultations available."
+        keywords="contact event planner, event planning consultation, wedding planner contact, birthday party planning"
+      />
+      <div className="contact">
       <section className="section">
         <div className="container">
           <div className="contact-hero">
@@ -168,6 +175,7 @@ const Contact: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

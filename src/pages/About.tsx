@@ -1,7 +1,15 @@
 import React from 'react';
+import SEO from '../components/SEO';
 import './About.css';
 const About: React.FC = () => {
-  return <div className="about">
+  return (
+    <>
+      <SEO 
+        title="About Us"
+        description="Learn about our story, passion for event planning, and commitment to creating memorable celebrations. From handmade gifts to full event coordination, we bring love to every detail."
+        keywords="about us, event planning story, handmade celebrations, sustainable events, community support, family business"
+      />
+      <div className="about">
       <section className="section bg-[#a7e3d8]">
         <div className="container bg-[#a7e3d8]/[0.84]">
           <div className="about-hero">
@@ -28,7 +36,7 @@ Every item we make carries a story : ours, and now, yours. Thank you for letting
             </div>
             
             <div className="about-image">
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&auto=format" alt="Our team planning events" />
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&auto=format" alt="Mother and daughter working together on handmade event decorations and planning materials" />
             </div>
           </div>
         </div>
@@ -105,6 +113,8 @@ Every item we make carries a story : ours, and now, yours. Thank you for letting
           </div>
         </div>
       </section>
-    </div>;
+    </div>
+    </>
+  );
 };
 export default About;

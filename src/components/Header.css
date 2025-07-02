@@ -20,9 +20,10 @@
   text-decoration: none;
 }
 
-.logo h2 {
+.logo-text {
   margin: 0;
   font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .nav {

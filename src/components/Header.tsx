@@ -18,10 +18,10 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo" onClick={closeMenu}>
-            <h2>Occasions</h2>
+            <span className="logo-text">Occasions</span>
           </Link>
           
-          <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
+          <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`} role="navigation" aria-label="Main navigation">
             <div className="nav-links">
               <Link to="/" className={`nav-link ${isActiveLink('/') ? 'active' : ''}`} onClick={closeMenu}>
                 Home
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
             </div>
           </nav>
 
-          <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+          <button className="hamburger" onClick={toggleMenu} aria-label="Toggle navigation menu" aria-expanded={isMenuOpen}>
             <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
             <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
             <span className={`hamburger-line ${isMenuOpen ? 'open' : ''}`}></span>
