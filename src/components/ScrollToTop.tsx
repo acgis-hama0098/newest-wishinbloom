@@ -5,9 +5,7 @@ const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    console.log('ScrollToTop component mounted');
     const toggleVisibility = () => {
-      console.log('Scroll position:', window.pageYOffset, 'isVisible:', window.pageYOffset > 300);
       if (window.pageYOffset > 300) {
         setIsVisible(true);
       } else {
@@ -26,23 +24,39 @@ const ScrollToTop: React.FC = () => {
     });
   };
 
-  console.log('ScrollToTop render - isVisible:', isVisible);
-  
+  if (!isVisible) {
+    return null;
+  }
+
   return (
     <button
       onClick={scrollToTop}
-      className={`
-        fixed bottom-6 right-6 z-50
-        w-12 h-12 rounded-full
-        bg-slate-600 hover:bg-slate-700 
-        text-white border-2 border-slate-400
-        shadow-lg hover:shadow-xl
-        flex items-center justify-center
-        transition-all duration-300 ease-out
-        hover:scale-110
-        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-400
-        ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}
-      `}
+      style={{
+        position: 'fixed',
+        bottom: '24px',
+        right: '24px',
+        width: '48px',
+        height: '48px',
+        borderRadius: '50%',
+        backgroundColor: '#4F46E5',
+        color: 'white',
+        border: 'none',
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+        zIndex: 1000,
+        transition: 'all 0.3s ease'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = '#3730A3';
+        e.currentTarget.style.transform = 'scale(1.1)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = '#4F46E5';
+        e.currentTarget.style.transform = 'scale(1)';
+      }}
       aria-label="Scroll to top"
     >
       <ChevronUp size={20} />
