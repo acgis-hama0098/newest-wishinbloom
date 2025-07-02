@@ -6,8 +6,8 @@ const LearnMore: React.FC = () => {
   return (
     <>
       <SEO 
-        title="Learn More - Wish in Bloom"
-        description="Discover our comprehensive event planning services, from custom floral arrangements to personalized gifts. Learn why clients choose Wish in Bloom for their special occasions."
+        title="Learn More - WishIn Bloom"
+        description="Discover our comprehensive event planning services, from custom floral arrangements to personalized gifts. Learn why clients choose WishIn Bloom for their special occasions."
         keywords="event planning services, custom floral arrangements, personalized gifts, venue selection, themed decorations"
       />
       <div className="learn-more">
@@ -15,7 +15,7 @@ const LearnMore: React.FC = () => {
         <section className="section intro-section">
           <div className="container">
             <div className="intro-content">
-              <h1>Welcome to Wish in Bloom</h1>
+              <h1>Welcome to WishIn Bloom</h1>
               <p className="intro-text">
                 Where every gift blooms with meaning and every celebration becomes an unforgettable memory. 
                 We are passionate about creating beautiful, personalized experiences that reflect your unique 
@@ -70,21 +70,21 @@ const LearnMore: React.FC = () => {
             <h2>What Our Clients Say</h2>
             <div className="testimonials-grid">
               <div className="testimonial-card">
-                <p>"Wish in Bloom made our wedding absolutely magical. Every detail was perfect, from the stunning floral arrangements to the seamless coordination. We couldn't have asked for a better team!"</p>
+                <p>"WishIn Bloom made our wedding absolutely magical. Every detail was perfect, from the stunning floral arrangements to the seamless coordination. We couldn't have asked for a better team!"</p>
                 <div className="client-info">
                   <strong>Sarah & Michael</strong>
                   <span>Wedding Celebration</span>
                 </div>
               </div>
               <div className="testimonial-card">
-                <p>"The team at Wish in Bloom transformed our daughter's birthday party into a fairy tale. The attention to detail and personalized touches made it a day she'll never forget."</p>
+                <p>"The team at WishIn Bloom transformed our daughter's birthday party into a fairy tale. The attention to detail and personalized touches made it a day she'll never forget."</p>
                 <div className="client-info">
                   <strong>Jennifer Thompson</strong>
                   <span>Birthday Party</span>
                 </div>
               </div>
               <div className="testimonial-card">
-                <p>"Professional, creative, and incredibly organized. Wish in Bloom took care of everything for our anniversary celebration, allowing us to simply enjoy our special moment."</p>
+                <p>"Professional, creative, and incredibly organized. WishIn Bloom took care of everything for our anniversary celebration, allowing us to simply enjoy our special moment."</p>
                 <div className="client-info">
                   <strong>Robert & Linda Chen</strong>
                   <span>Anniversary Celebration</span>

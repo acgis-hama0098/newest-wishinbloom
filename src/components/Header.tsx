@@ -14,11 +14,11 @@ const Header: React.FC = () => {
   const isActiveLink = (path: string) => {
     return location.pathname === path;
   };
-  return <header className="bg-[#90afa8]">
+  return <header className="header">
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo" onClick={closeMenu}>
-            <span className="logo-text">Wish in Bloom</span>
+            <span className="logo-text">WishIn Bloom</span>
           </Link>
           
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`} role="navigation" aria-label="Main navigation">

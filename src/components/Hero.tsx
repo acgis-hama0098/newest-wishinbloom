@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
       <div className="hero-content">
         <div className="hero-text">
           <div className="hero-branding">
-            <h1 className="brand-name">Wish in Bloom</h1>
+            <h1 className="brand-name">WishIn Bloom</h1>
             <p className="brand-slogan">Where Every Gift Blooms with Meaning.</p>
           </div>
           <p className="hero-description">
