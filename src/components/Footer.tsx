@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Facebook } from 'lucide-react';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -43,7 +44,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label="Facebook - Wishin Bloom"
               >
-                📘
+                <Facebook size={24} />
               </a>
               <a 
                 href="https://www.facebook.com/wishin_bloom" 
@@ -51,7 +52,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 aria-label="Facebook - Wishin Bloom Alternative"
               >
-                📘
+                <Facebook size={24} />
               </a>
             </div>
           </div>
