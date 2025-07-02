@@ -5,7 +5,9 @@ const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    console.log('ScrollToTop component mounted');
     const toggleVisibility = () => {
+      console.log('Scroll position:', window.pageYOffset, 'isVisible:', window.pageYOffset > 300);
       if (window.pageYOffset > 300) {
         setIsVisible(true);
       } else {
@@ -24,6 +26,8 @@ const ScrollToTop: React.FC = () => {
     });
   };
 
+  console.log('ScrollToTop render - isVisible:', isVisible);
+  
   return (
     <button
       onClick={scrollToTop}
