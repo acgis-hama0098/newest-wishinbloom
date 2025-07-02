@@ -36,6 +36,12 @@
 
     --radius: 0.5rem;
 
+    /* Language Switcher Pastels */
+    --language-bg: 248 233 240; /* #f8e9f0 */
+    --language-bg-hover: 230 240 255; /* #e6f0ff */
+    --language-text: 68 68 68; /* #444 */
+    --language-border: 220 220 220; /* #dcdcdc */
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
