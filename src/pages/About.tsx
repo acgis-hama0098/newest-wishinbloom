@@ -10,8 +10,8 @@ const About: React.FC = () => {
         keywords="about us, event planning story, handmade celebrations, sustainable events, community support, family business"
       />
       <div className="about">
-      <section className="section bg-[#a7e3d8]">
-        <div className="container bg-[#a7e3d8]/[0.84]">
+      <section className="section bg-secondary">
+        <div className="container">
           <div className="about-hero">
             <h1>About Occasions</h1>
             <p className="lead font-bold">
@@ -22,7 +22,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      <section className="section section-alt">
+      <section className="section bg-muted">
         <div className="container">
           <div className="about-content">
             <div className="about-text">
@@ -81,7 +81,7 @@ Every item we make carries a story : ours, and now, yours. Thank you for letting
         </div>
       </section>
 
-      <section className="section section-alt">
+      <section className="section bg-muted">
         <div className="container">
           <div className="values">
             <h2>Our Values</h2>
