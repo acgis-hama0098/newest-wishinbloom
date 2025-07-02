@@ -47,35 +47,6 @@ const CanadaDay: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="occasion-details">
-              <h2>Why Choose Us for Canada Day?</h2>
-              <div className="detail-list">
-                <div className="detail-item">
-                  <div className="detail-icon">🍁</div>
-                  <div>
-                    <h4>Patriotic Planning</h4>
-                    <p>Every Canada Day celebration showcases Canadian pride and national spirit.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🎯</div>
-                  <div>
-                    <h4>Attention to Detail</h4>
-                    <p>From maple leaf motifs to red and white themes, we perfect every patriotic detail.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🤝</div>
-                  <div>
-                    <h4>Full Support</h4>
-                    <p>Our team ensures your Canada Day celebration brings communities together.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

@@ -47,35 +47,6 @@ const CasualGift: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="occasion-details">
-              <h2>Why Choose Us for Casual Gifts?</h2>
-              <div className="detail-list">
-                <div className="detail-item">
-                  <div className="detail-icon">🎁</div>
-                  <div>
-                    <h4>Thoughtful Planning</h4>
-                    <p>Every casual celebration is designed to create meaningful moments of joy.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">💫</div>
-                  <div>
-                    <h4>Attention to Detail</h4>
-                    <p>From surprise elements to personal touches, we make every gesture special.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🤗</div>
-                  <div>
-                    <h4>Full Support</h4>
-                    <p>Our team helps you create spontaneous celebrations that feel perfectly planned.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

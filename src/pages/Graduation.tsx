@@ -47,35 +47,6 @@ const Graduation: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="occasion-details">
-              <h2>Why Choose Us for Graduations?</h2>
-              <div className="detail-list">
-                <div className="detail-item">
-                  <div className="detail-icon">🎓</div>
-                  <div>
-                    <h4>Achievement-Focused Planning</h4>
-                    <p>Every graduation celebration honors the graduate's hard work and accomplishments.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🎯</div>
-                  <div>
-                    <h4>Attention to Detail</h4>
-                    <p>From school colors to memory displays, we capture the graduate's journey.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🤝</div>
-                  <div>
-                    <h4>Full Support</h4>
-                    <p>Our team ensures your graduation celebration is memorable and stress-free.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

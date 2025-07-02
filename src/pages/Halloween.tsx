@@ -48,35 +48,6 @@ const Halloween: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="occasion-details">
-              <h2>Why Choose Us for Halloween?</h2>
-              <div className="detail-list">
-                <div className="detail-item">
-                  <div className="detail-icon">✨</div>
-                  <div>
-                    <h4>Personalized Planning</h4>
-                    <p>Every Halloween celebration is unique, and we tailor our services to your specific vision and needs.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🎯</div>
-                  <div>
-                    <h4>Attention to Detail</h4>
-                    <p>From the smallest decorative touches to major logistics, we ensure everything is perfect.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🤝</div>
-                  <div>
-                    <h4>Full Support</h4>
-                    <p>Our team is with you every step of the way, from initial planning to the final celebration.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

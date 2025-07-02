@@ -32,7 +32,6 @@ const OccasionTemplate: React.FC<OccasionTemplateProps> = ({ data }) => {
           <div className="container">
             <div className="occasion-content">
               <GalleryGrid items={data.galleryItems} />
-              <DetailsSection title={data.whyChooseTitle} items={data.detailItems} />
             </div>
           </div>
         </section>

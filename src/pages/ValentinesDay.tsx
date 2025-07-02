@@ -47,35 +47,6 @@ const ValentinesDay: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="occasion-details">
-              <h2>Why Choose Us for Valentine's Day?</h2>
-              <div className="detail-list">
-                <div className="detail-item">
-                  <div className="detail-icon">💝</div>
-                  <div>
-                    <h4>Romantic Planning</h4>
-                    <p>Every Valentine's Day celebration is crafted to create magical romantic moments.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🌹</div>
-                  <div>
-                    <h4>Attention to Detail</h4>
-                    <p>From rose petals to candlelight, we ensure every romantic detail is perfect.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">💕</div>
-                  <div>
-                    <h4>Love-Focused Support</h4>
-                    <p>Our team specializes in creating unforgettable romantic experiences.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

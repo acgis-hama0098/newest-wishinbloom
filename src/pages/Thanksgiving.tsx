@@ -47,35 +47,6 @@ const Thanksgiving: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="occasion-details">
-              <h2>Why Choose Us for Thanksgiving?</h2>
-              <div className="detail-list">
-                <div className="detail-item">
-                  <div className="detail-icon">🦃</div>
-                  <div>
-                    <h4>Grateful Planning</h4>
-                    <p>Every Thanksgiving celebration focuses on gratitude, family, and meaningful connections.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🍂</div>
-                  <div>
-                    <h4>Attention to Detail</h4>
-                    <p>From autumn leaves to harvest centerpieces, we create the perfect thankful atmosphere.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🤝</div>
-                  <div>
-                    <h4>Full Support</h4>
-                    <p>Our team ensures your Thanksgiving celebration brings everyone together with gratitude.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

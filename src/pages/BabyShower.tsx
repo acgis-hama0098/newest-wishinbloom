@@ -47,35 +47,6 @@ const BabyShower: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="occasion-details">
-              <h2>Why Choose Us for Baby Showers?</h2>
-              <div className="detail-list">
-                <div className="detail-item">
-                  <div className="detail-icon">👶</div>
-                  <div>
-                    <h4>Loving Planning</h4>
-                    <p>Every baby shower is planned with care to celebrate the miracle of new life.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🍼</div>
-                  <div>
-                    <h4>Attention to Detail</h4>
-                    <p>From nursery themes to sweet treats, we create the perfect welcoming atmosphere.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">💝</div>
-                  <div>
-                    <h4>Full Support</h4>
-                    <p>Our team ensures your baby shower is stress-free and filled with joy.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

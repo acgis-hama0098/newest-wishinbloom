@@ -47,35 +47,6 @@ const NewYear: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="occasion-details">
-              <h2>Why Choose Us for New Year?</h2>
-              <div className="detail-list">
-                <div className="detail-item">
-                  <div className="detail-icon">🎊</div>
-                  <div>
-                    <h4>Spectacular Planning</h4>
-                    <p>Every New Year celebration is designed to create unforgettable countdown moments.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">✨</div>
-                  <div>
-                    <h4>Attention to Detail</h4>
-                    <p>From midnight countdowns to champagne toasts, we perfect every celebration detail.</p>
-                  </div>
-                </div>
-                
-                <div className="detail-item">
-                  <div className="detail-icon">🥂</div>
-                  <div>
-                    <h4>Full Support</h4>
-                    <p>Our team ensures your New Year celebration is seamless and spectacular.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
