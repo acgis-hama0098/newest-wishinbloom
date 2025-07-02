@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OccasionPage.css';
 
 const Graduation: React.FC = () => {
@@ -23,7 +24,7 @@ const Graduation: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>High School Graduation</h4>
                     <p>Celebrate the transition to adulthood with parties honoring years of hard work</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -32,7 +33,7 @@ const Graduation: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>College Graduation</h4>
                     <p>Honor degree achievements with sophisticated celebrations for graduates</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -41,7 +42,7 @@ const Graduation: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Graduate Degree</h4>
                     <p>Celebrate advanced degrees with elegant parties recognizing exceptional dedication</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
               </div>

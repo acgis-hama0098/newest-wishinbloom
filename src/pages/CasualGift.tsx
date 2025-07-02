@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OccasionPage.css';
 
 const CasualGift: React.FC = () => {
@@ -23,7 +24,7 @@ const CasualGift: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Just Because Party</h4>
                     <p>Spontaneous celebrations to show appreciation and create unexpected joy</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -32,7 +33,7 @@ const CasualGift: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Friendship Celebration</h4>
                     <p>Casual gatherings to celebrate special friendships and meaningful connections</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -41,7 +42,7 @@ const CasualGift: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Surprise Gesture</h4>
                     <p>Thoughtful surprise celebrations for life's everyday victories and moments</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
               </div>

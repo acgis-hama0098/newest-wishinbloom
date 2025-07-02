@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OccasionPage.css';
 
 const MothersDay: React.FC = () => {
@@ -24,7 +25,7 @@ const MothersDay: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Elegant Mother's Day Brunch</h4>
                     <p>Beautiful brunch celebrations with elegant table settings and delicious food</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -33,7 +34,7 @@ const MothersDay: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Garden Tea Party</h4>
                     <p>Charming outdoor tea parties surrounded by beautiful flowers and nature</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -42,7 +43,7 @@ const MothersDay: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Family Gathering</h4>
                     <p>Intimate family celebrations that bring everyone together to honor mom</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
               </div>

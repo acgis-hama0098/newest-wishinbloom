@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OccasionPage.css';
 
 const NewYear: React.FC = () => {
@@ -23,7 +24,7 @@ const NewYear: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>New Year's Eve Party</h4>
                     <p>Glamorous countdown celebrations with champagne, confetti, and midnight magic</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -32,7 +33,7 @@ const NewYear: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>New Year's Day Brunch</h4>
                     <p>Fresh start celebrations with elegant brunch settings and hopeful decorations</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -41,7 +42,7 @@ const NewYear: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Resolution Party</h4>
                     <p>Inspiring celebrations focused on new goals and fresh beginnings for the year ahead</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
               </div>

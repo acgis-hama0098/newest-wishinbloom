@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OccasionPage.css';
 
 const ValentinesDay: React.FC = () => {
@@ -23,7 +24,7 @@ const ValentinesDay: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Romantic Dinner</h4>
                     <p>Intimate dinner celebrations with elegant decorations and romantic ambiance</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -32,7 +33,7 @@ const ValentinesDay: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Valentine's Party</h4>
                     <p>Fun Valentine's Day parties with love-themed decorations and activities</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -41,7 +42,7 @@ const ValentinesDay: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Couples Celebration</h4>
                     <p>Special celebrations designed for couples to create lasting romantic memories</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
               </div>

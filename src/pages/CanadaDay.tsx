@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OccasionPage.css';
 
 const CanadaDay: React.FC = () => {
@@ -23,7 +24,7 @@ const CanadaDay: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Backyard BBQ</h4>
                     <p>Classic Canadian barbecue celebrations with maple leaf decorations and outdoor fun</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -32,7 +33,7 @@ const CanadaDay: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Community Festival</h4>
                     <p>Large gatherings celebrating Canadian heritage with games, music, and local culture</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -41,7 +42,7 @@ const CanadaDay: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Fireworks Party</h4>
                     <p>Evening celebrations with spectacular fireworks displays and Canadian pride</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
               </div>

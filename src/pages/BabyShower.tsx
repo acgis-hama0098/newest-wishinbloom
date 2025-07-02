@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OccasionPage.css';
 
 const BabyShower: React.FC = () => {
@@ -23,7 +24,7 @@ const BabyShower: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Traditional Baby Shower</h4>
                     <p>Classic celebrations with games, gifts, and sweet decorations for expecting parents</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -32,7 +33,7 @@ const BabyShower: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Gender Reveal Party</h4>
                     <p>Exciting celebrations revealing baby's gender with creative and memorable surprises</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -41,7 +42,7 @@ const BabyShower: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Co-ed Baby Shower</h4>
                     <p>Modern celebrations including both parents and all friends in welcoming baby</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
               </div>

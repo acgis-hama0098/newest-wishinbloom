@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OccasionPage.css';
 const Wedding: React.FC = () => {
   return <div className="occasion-page">
@@ -21,7 +22,7 @@ const Wedding: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Classic Wedding</h4>
                     <p>Timeless and elegant wedding ceremonies with traditional touches</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -30,7 +31,7 @@ const Wedding: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Outdoor Wedding</h4>
                     <p>Beautiful outdoor ceremonies in natural settings and gardens</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -39,7 +40,7 @@ const Wedding: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Modern Wedding</h4>
                     <p>Contemporary wedding celebrations with modern style and flair</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
               </div>

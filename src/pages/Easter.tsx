@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './OccasionPage.css';
 
 const Easter: React.FC = () => {
@@ -24,7 +25,7 @@ const Easter: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Easter Brunch</h4>
                     <p>Delightful Easter brunch celebrations with spring decorations and family fun</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -33,7 +34,7 @@ const Easter: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Easter Egg Hunt</h4>
                     <p>Fun-filled Easter egg hunts for children with exciting games and prizes</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
                 
@@ -42,7 +43,7 @@ const Easter: React.FC = () => {
                   <div className="gallery-item-content">
                     <h4>Spring Garden Party</h4>
                     <p>Beautiful outdoor Easter celebrations surrounded by spring flowers and nature</p>
-                    <button className="btn btn-primary">Inquire</button>
+                    <Link to="/contact" className="btn btn-primary">Inquire</Link>
                   </div>
                 </div>
               </div>
