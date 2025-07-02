@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import OccasionDropdown from './OccasionDropdown';
+import LanguageSwitcher from './LanguageSwitcher';
 import './Header.css';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -24,15 +27,16 @@ const Header: React.FC = () => {
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`} role="navigation" aria-label="Main navigation">
             <div className="nav-links">
               <Link to="/" className={`nav-link ${isActiveLink('/') ? 'active' : ''}`} onClick={closeMenu}>
-                Home
+                {t('nav.home')}
               </Link>
               <Link to="/about" className={`nav-link ${isActiveLink('/about') ? 'active' : ''}`} onClick={closeMenu}>
-                About
+                {t('nav.about')}
               </Link>
               <Link to="/contact" className={`nav-link ${isActiveLink('/contact') ? 'active' : ''}`} onClick={closeMenu}>
-                Contact
+                {t('nav.contact')}
               </Link>
               <OccasionDropdown onSelect={closeMenu} />
+              <LanguageSwitcher />
             </div>
           </nav>
 
