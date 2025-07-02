@@ -39,7 +39,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="section section-alt">
+      <section id="occasions" className="section section-alt">
         <div className="container">
           <div className="features">
             <h2>Why Choose Us</h2>

@@ -26,6 +26,7 @@ import SpecialOccasions from './pages/SpecialOccasions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ReturnPolicy from './pages/ReturnPolicy';
+import LearnMore from './pages/LearnMore';
 import './styles/globals.css';
 
 const App: React.FC = () => {
@@ -38,6 +39,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/learn-more" element={<LearnMore />} />
             <Route path="/occasion/birthday" element={<Birthday />} />
             <Route path="/occasion/wedding" element={<Wedding />} />
             <Route path="/occasion/baptism" element={<Baptism />} />

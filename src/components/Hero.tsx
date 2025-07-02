@@ -22,8 +22,8 @@ const Hero: React.FC = () => {
             unforgettable memories for life's most precious occasions.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary">Explore Occasions</button>
-            <button className="btn btn-secondary">Learn More</button>
+            <a href="#occasions" className="btn btn-primary">Explore Occasions</a>
+            <a href="/learn-more" className="btn btn-secondary">Learn More</a>
           </div>
         </div>
         
