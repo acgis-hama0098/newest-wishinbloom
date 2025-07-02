@@ -39,7 +39,51 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section id="occasions" className="section section-alt">
+      <section id="occasions" className="section">
+        <div className="container">
+          <div className="occasions-section">
+            <h2>Explore Our Occasions</h2>
+            <p>Discover the perfect celebration for every special moment in your life</p>
+            <div className="occasions-grid">
+              <a href="/occasion/wedding" className="occasion-card">
+                <div className="occasion-icon">💍</div>
+                <h3>Weddings</h3>
+                <p>Create your perfect day with our comprehensive wedding planning services</p>
+              </a>
+              <a href="/occasion/birthday" className="occasion-card">
+                <div className="occasion-icon">🎂</div>
+                <h3>Birthdays</h3>
+                <p>Celebrate another year with personalized birthday party planning</p>
+              </a>
+              <a href="/occasion/anniversary" className="occasion-card">
+                <div className="occasion-icon">💕</div>
+                <h3>Anniversaries</h3>
+                <p>Honor your love story with meaningful anniversary celebrations</p>
+              </a>
+              <a href="/occasion/graduation" className="occasion-card">
+                <div className="occasion-icon">🎓</div>
+                <h3>Graduations</h3>
+                <p>Mark academic achievements with memorable graduation parties</p>
+              </a>
+              <a href="/occasion/baby-shower" className="occasion-card">
+                <div className="occasion-icon">👶</div>
+                <h3>Baby Showers</h3>
+                <p>Welcome new arrivals with beautiful baby shower celebrations</p>
+              </a>
+              <a href="/occasion/christmas" className="occasion-card">
+                <div className="occasion-icon">🎄</div>
+                <h3>Christmas</h3>
+                <p>Create magical holiday memories with festive celebrations</p>
+              </a>
+            </div>
+            <div className="occasions-footer">
+              <a href="/occasion/special-occasions" className="btn btn-primary">View All Occasions</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
         <div className="container">
           <div className="features">
             <h2>Why Choose Us</h2>
