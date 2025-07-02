@@ -18,6 +18,11 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo" onClick={closeMenu}>
+            <img 
+              src="/lovable-uploads/fad33cec-6e7e-4726-b60c-8019cacfa341.png" 
+              alt="Wish In Bloom Logo" 
+              className="logo-image"
+            />
             <span className="logo-text">WishIn Bloom</span>
           </Link>
           
