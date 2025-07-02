@@ -103,28 +103,7 @@ const occasionData: Record<string, OccasionData> = {
         description: 'Our team is with you every step of the way, from initial planning to the final celebration.'
       }
     ],
-    serviceItems: [
-      {
-        id: 'design',
-        title: 'Event Design',
-        description: 'Custom themes and decorations that reflect your style'
-      },
-      {
-        id: 'venue',
-        title: 'Venue Selection',
-        description: 'Finding the perfect location for your celebration'
-      },
-      {
-        id: 'vendor',
-        title: 'Vendor Coordination',
-        description: 'Managing all suppliers and service providers'
-      },
-      {
-        id: 'coordination',
-        title: 'Day-of Coordination',
-        description: 'Ensuring everything runs smoothly on your special day'
-      }
-    ],
+    serviceItems: [],
     whyChooseTitle: 'Why Choose Us for Your Birthday?',
     servicesTitle: 'Birthday Services'
   },
