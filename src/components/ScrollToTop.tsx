@@ -34,16 +34,15 @@ const ScrollToTop: React.FC = () => {
         flex items-center justify-center
         transition-all duration-300 ease-out
         hover:scale-110
-        focus:outline-none focus:ring-2 focus:ring-offset-2
-        bg-white border-2 border-opacity-20
-        text-opacity-80 hover:text-opacity-100
+        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-300
         ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'}
       `}
       style={{
         backgroundColor: 'var(--soft-teal)',
         color: 'white',
         borderColor: 'var(--soft-teal-light)',
-        boxShadow: '0 4px 20px rgba(112, 169, 161, 0.3)'
+        boxShadow: '0 4px 20px rgba(112, 169, 161, 0.3)',
+        border: '2px solid var(--soft-teal-light)'
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.backgroundColor = 'var(--soft-teal-dark)';
