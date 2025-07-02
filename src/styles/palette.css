@@ -24,6 +24,11 @@
   --text-secondary: var(--warm-taupe);
   --text-light: var(--cream-white);
   
+  /* Footer colors */
+  --deep-taupe: #7A6C5D;
+  --charcoal-gray: #3A3A3A;
+  --soft-black: #1F1F1F;
+  
   /* Background colors */
   --bg-primary: var(--cream-white);
   --bg-secondary: var(--soft-lavender-light);
