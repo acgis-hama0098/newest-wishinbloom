@@ -73,7 +73,7 @@ const occasionData: Record<string, OccasionData> = {
       }
     ],
     whyChooseTitle: 'Why Choose Us for Your Wedding?',
-    servicesTitle: 'Our Wedding Services'
+    servicesTitle: 'Wedding Services'
   },
   birthday: {
     title: 'Birthday Celebrations',
@@ -147,7 +147,7 @@ const occasionData: Record<string, OccasionData> = {
       }
     ],
     whyChooseTitle: 'Why Choose Us for Your Birthday?',
-    servicesTitle: 'Our Birthday Services'
+    servicesTitle: 'Birthday Services'
   },
   anniversary: {
     title: 'Anniversary Celebrations',
@@ -221,7 +221,81 @@ const occasionData: Record<string, OccasionData> = {
       }
     ],
     whyChooseTitle: 'Why Choose Us for Anniversaries?',
-    servicesTitle: 'Our Anniversary Services'
+    servicesTitle: 'Anniversary Services'
+  },
+  'special-occasions': {
+    title: 'Special Occasions',
+    description: 'Create unforgettable moments for unique celebrations and once-in-a-lifetime events that deserve special attention.',
+    seoTitle: 'Special Occasion Planning Services',
+    seoDescription: 'Professional planning for unique celebrations, corporate events, milestone achievements, and custom themed events. Make your special occasion unforgettable.',
+    seoKeywords: 'special occasion planner, corporate events, milestone celebrations, custom themes, unique events, professional event planning',
+    galleryItems: [
+      {
+        id: 'corporate-events',
+        image: '/placeholder.svg',
+        alt: 'Professional corporate event with elegant business setting and networking atmosphere',
+        title: 'Corporate Events',
+        description: 'Professional celebrations for company milestones, launches, and business achievements'
+      },
+      {
+        id: 'milestone-celebrations',
+        image: '/placeholder.svg',
+        alt: 'Special milestone celebration with personalized decorations and achievement recognition',
+        title: 'Milestone Celebrations',
+        description: 'Unique events marking significant life achievements and personal milestones'
+      },
+      {
+        id: 'custom-themes',
+        image: '/placeholder.svg',
+        alt: 'Custom themed event with personalized decorations and unique creative elements',
+        title: 'Custom Themes',
+        description: 'Personalized celebrations with completely custom themes tailored to your vision'
+      }
+    ],
+    detailItems: [
+      {
+        id: 'unique',
+        icon: '⭐',
+        title: 'Unique Planning',
+        description: 'Every special occasion is planned with creativity to match your unique vision.'
+      },
+      {
+        id: 'attention',
+        icon: '🎯',
+        title: 'Attention to Detail',
+        description: 'From concept to execution, we ensure every element reflects your special moment.'
+      },
+      {
+        id: 'support',
+        icon: '🤝',
+        title: 'Full Support',
+        description: 'Our team brings your most ambitious celebration ideas to life perfectly.'
+      }
+    ],
+    serviceItems: [
+      {
+        id: 'design',
+        title: 'Event Design',
+        description: 'Custom creative themes designed specifically for your unique celebration'
+      },
+      {
+        id: 'venue',
+        title: 'Venue Selection',
+        description: 'Finding distinctive locations that match your special occasion vision'
+      },
+      {
+        id: 'vendor',
+        title: 'Vendor Coordination',
+        description: 'Managing specialized suppliers and service providers for unique events'
+      },
+      {
+        id: 'coordination',
+        title: 'Day-of Coordination',
+        description: 'Ensuring every detail of your special occasion unfolds flawlessly'
+      }
+    ],
+    whyChooseTitle: 'Why Choose Us for Special Occasions?',
+    servicesTitle: 'Special Occasion Services'
   }
 };
 
