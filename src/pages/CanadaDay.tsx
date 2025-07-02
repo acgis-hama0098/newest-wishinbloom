@@ -51,31 +51,6 @@ const CanadaDay: React.FC = () => {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="occasion-services">
-            <h2>Our Canada Day Services</h2>
-            <div className="services-grid">
-              <div className="service-item">
-                <h4>Event Design</h4>
-                <p>Patriotic themes celebrating Canadian heritage and national pride</p>
-              </div>
-              <div className="service-item">
-                <h4>Venue Selection</h4>
-                <p>Finding perfect outdoor locations for your Canada Day celebration</p>
-              </div>
-              <div className="service-item">
-                <h4>Vendor Coordination</h4>
-                <p>Managing all suppliers and service providers for your patriotic event</p>
-              </div>
-              <div className="service-item">
-                <h4>Day-of Coordination</h4>
-                <p>Ensuring everything runs smoothly for your national celebration</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

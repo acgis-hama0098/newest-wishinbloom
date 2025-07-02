@@ -51,31 +51,6 @@ const Thanksgiving: React.FC = () => {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="occasion-services">
-            <h2>Our Thanksgiving Services</h2>
-            <div className="services-grid">
-              <div className="service-item">
-                <h4>Event Design</h4>
-                <p>Warm autumn themes celebrating harvest and gratitude</p>
-              </div>
-              <div className="service-item">
-                <h4>Venue Selection</h4>
-                <p>Finding cozy locations perfect for Thanksgiving gatherings</p>
-              </div>
-              <div className="service-item">
-                <h4>Vendor Coordination</h4>
-                <p>Managing all suppliers and service providers for your feast</p>
-              </div>
-              <div className="service-item">
-                <h4>Day-of Coordination</h4>
-                <p>Ensuring everything runs smoothly for your grateful celebration</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

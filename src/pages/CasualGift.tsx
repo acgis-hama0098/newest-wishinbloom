@@ -51,31 +51,6 @@ const CasualGift: React.FC = () => {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="occasion-services">
-            <h2>Our Casual Gift Services</h2>
-            <div className="services-grid">
-              <div className="service-item">
-                <h4>Event Design</h4>
-                <p>Simple yet meaningful themes for spontaneous celebrations</p>
-              </div>
-              <div className="service-item">
-                <h4>Venue Selection</h4>
-                <p>Finding casual and comfortable locations for your gathering</p>
-              </div>
-              <div className="service-item">
-                <h4>Vendor Coordination</h4>
-                <p>Managing suppliers for intimate and casual celebrations</p>
-              </div>
-              <div className="service-item">
-                <h4>Day-of Coordination</h4>
-                <p>Ensuring your casual celebration feels effortless and joyful</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

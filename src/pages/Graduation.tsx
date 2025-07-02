@@ -51,31 +51,6 @@ const Graduation: React.FC = () => {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="occasion-services">
-            <h2>Our Graduation Services</h2>
-            <div className="services-grid">
-              <div className="service-item">
-                <h4>Event Design</h4>
-                <p>Custom themes celebrating academic achievements and future goals</p>
-              </div>
-              <div className="service-item">
-                <h4>Venue Selection</h4>
-                <p>Finding the perfect location to celebrate this milestone</p>
-              </div>
-              <div className="service-item">
-                <h4>Vendor Coordination</h4>
-                <p>Managing all suppliers and service providers for your celebration</p>
-              </div>
-              <div className="service-item">
-                <h4>Day-of Coordination</h4>
-                <p>Ensuring everything runs smoothly on graduation day</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

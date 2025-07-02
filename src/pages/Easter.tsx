@@ -52,31 +52,6 @@ const Easter: React.FC = () => {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="occasion-services">
-            <h2>Our Easter Services</h2>
-            <div className="services-grid">
-              <div className="service-item">
-                <h4>Event Design</h4>
-                <p>Custom themes and decorations that reflect your style</p>
-              </div>
-              <div className="service-item">
-                <h4>Venue Selection</h4>
-                <p>Finding the perfect location for your celebration</p>
-              </div>
-              <div className="service-item">
-                <h4>Vendor Coordination</h4>
-                <p>Managing all suppliers and service providers</p>
-              </div>
-              <div className="service-item">
-                <h4>Day-of Coordination</h4>
-                <p>Ensuring everything runs smoothly on your special day</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
